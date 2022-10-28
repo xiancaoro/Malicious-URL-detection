@@ -58,9 +58,7 @@ df = df.sample(frac=1).reset_index(drop = True)
 df.head()
 ```
 
-运行结果如下：
 
-<img src="C:\Users\matebook14\AppData\Roaming\Typora\typora-user-images\image-20221028200144666.png" alt="image-20221028200144666" style="zoom:67%;" />
 
 
 
@@ -190,7 +188,6 @@ for i in range(len(df)):
 featureSet.head()
 ```
 
-<img src="C:\Users\matebook14\AppData\Roaming\Typora\typora-user-images\image-20221028201033672.png" alt="image-20221028201033672" style="zoom:80%;" />
 
 
 
@@ -210,7 +207,6 @@ plt.xlabel('Length of URL')
 sns.plt.show()
 ```
 
-<img src="C:\Users\matebook14\AppData\Roaming\Typora\typora-user-images\image-20221028201122205.png" alt="image-20221028201122205" style="zoom:80%;" />
 
 后续操作可以依据这个
 
@@ -250,7 +246,6 @@ score = model.score(x_test,y_test)
 print ("%s : %s " %("RandomForest",score))
 ```
 
-<img src="C:\Users\matebook14\AppData\Roaming\Typora\typora-user-images\image-20221028201408456.png" alt="image-20221028201408456" style="zoom:67%;" />
 
 ##### ⑤其余指标
 
@@ -263,8 +258,6 @@ predicted = model.predict(x_test)
 print(metrics.classification_report(expected, predicted))
 # 输出结果，精确度、召回率、f-1分数
 ```
-
-<img src="C:\Users\matebook14\AppData\Roaming\Typora\typora-user-images\image-20221028201443553.png" alt="image-20221028201443553" style="zoom:67%;" />
 
 
 
